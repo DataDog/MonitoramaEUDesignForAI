@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<script type="text/javascript">
+		// This automatically sets the right viewport scale on mobile devices
+		(function() {
+ 		var scale = 1 / window.devicePixelRatio
+ 		var viewport = "width=device-width, height=device-height, initial-scale=" + scale + ", maximum-scale=" + scale + ", user-scalable=no"
+ 		var iOS = /iPad|iPhone|iPod/.test(navigator.platform)
+ 		if (iOS) { viewport += ", shrink-to-fit=no" }
+ 		document.write("<meta name=\"viewport\" content=\"" + viewport + "\">")
+		})()
+		</script>
+
+		<link rel="apple-touch-icon" href="framer/images/icon-120.png">
+		<link rel="apple-touch-icon" href="framer/images/icon-76.png" sizes="76x76">
+		<link rel="apple-touch-icon" href="framer/images/icon-120.png" sizes="120x120">
+		<link rel="apple-touch-icon" href="framer/images/icon-152.png" sizes="152x152">
+		<link rel="apple-touch-icon" href="framer/images/icon-180.png" sizes="180x180">
+		<link rel="apple-touch-icon" href="framer/images/icon-192.png" sizes="192x192">
+
+		<link rel="stylesheet" type="text/css" href="framer/style.css?nocache=6d40bc53861208d298f85019e08849ff">
+
+		<script src="framer/coffee-script.js"></script>
+		<script src="framer/framer.js?nocache=fcab33a21acadc1284c8a5a0af71fec2"></script>
+		<script src="framer/framer.generated.js?nocache=4723232f56c7c2d96b33311d1886c788"></script>
+		<script src="framer/framer.modules.js?nocache=c890977f69c0dfef7d0b7d6e88d1edc2"></script>
+		<script src="framer/framer.vekter.js"></script>
+		<script>Framer.Device.hideBezel = false</script><script>document.addEventListener("DOMContentLoaded", function() {window.__framerClientCodeId = 913;window.__framerNew = function (n,loc,th,i){if (i == null) { return i };i.__framerInstanceInfo = _.defaults({name:n,location:loc,hash:th},i.__framerInstanceInfo);_.defaults(i.__framerInstanceInfo,{name:"Untitled"});return i;};(function() {
+  var flow, i, j, k, knob, l, len, len1, len2, len3, len4, len5, li, linegraph, linegraph2, m, metricScroll, metric_array, metriclist_array, n, o, ref, ref1, t, targetScroll, target_array, targetlist_array, toggle, yval;
+
+  metric_array = ["aws.advisor.service_limit.reserved.usage_ratio", "aws.advisor.service_limit.usage", "aws.advisor.service_limit.usage_ratio", "aws.apigateway.4xxerror", "aws.apigateway.5xxerror", "aws.apigateway.count", "aws.apigateway.integration_latency", "aws.apigateway.latency", "aws.apigateway.latency.maximum", "aws.apigateway.latency.minimum", "aws.applicationelb.active_connection_count", "aws.applicationelb.client_tlsnegotiation_error_count", "aws.applicationelb.healthy_host_count", "aws.applicationelb.healthy_host_count.maximum", "aws.applicationelb.healthy_host_count.minimum", "aws.applicationelb.healthy_host_count_deduped", "aws.applicationelb.httpcode_elb_4xx", "aws.applicationelb.httpcode_elb_5xx", "aws.applicationelb.httpcode_target_2xx", "aws.applicationelb.httpcode_target_3xx", "aws.applicationelb.httpcode_target_4xx", "aws.applicationelb.httpcode_target_5xx", "aws.applicationelb.ipv_6processed_bytes", "aws.applicationelb.ipv_6request_count", "aws.applicationelb.new_connection_count", "aws.applicationelb.processed_bytes", "aws.applicationelb.request_count", "aws.applicationelb.request_count_per_target", "aws.applicationelb.rule_evaluations", "aws.applicationelb.target_connection_error_count", "aws.applicationelb.target_response_time.average", "aws.applicationelb.target_response_time.maximum", "aws.applicationelb.target_response_time.p95", "aws.applicationelb.target_response_time.p99"];
+
+  metriclist_array = [];
+
+  metriclist_array.push(metric);
+
+  target_array = ["account:carcetti", "account:staging", "account:sheepdog-prod", "active", "active-alerting", "active-colvin", "active-delancie", "active-herc", "active-hms-resolver", "active-mcnulty", "active-nicky", "active-partlow", "active-read", "active-sobotka", "active-templeton", "active-wilson", "active-write", "ansible.group:destro", "ansible.group:resource-writer", "ansible.group:trace-loom", "ansible.group:trace-stats-aggregator", "ansible.group:trace-stats-aggregator-longterm", "ansible.group:trace-writer", "ansible.group:trace-writer-longterm", "ansible.managed:true", "ansible_managed:true", "automatic-restart:true", "autoscaling:true", "autoscaling_group:alerting-metric-evaluator-c32xlarge", "autoscaling_group:alerting-metric-evaluator-c34xlarge", "autoscaling_group:alerting-metric-evaluator-r32xlarge", "autoscaling_group:alerting-metric-evaluator-r3xlarge", "autoscaling_group:apm-kafka-1-zookeeper", "autoscaling_group:appgate-controller", "autoscaling_group:bunk-agent", "autoscaling_group:bunk-app", "autoscaling_group:consul-0002e2edf2485e7bf62d6b0977", "autoscaling_group:corgi-eu-00d6cac87c3ecb4f1746dcd560", "autoscaling_group:corgi-us-00d6cac87c3ecb4f1746dcd55f", "autoscaling_group:enclave-server-003b77c11d53c5ee2a9a8aa40d", "autoscaling_group:general-kafka-1-zookeeper", "autoscaling_group:gitlab-00c013eeb2758ae5ef30316a85", "autoscaling_group:gitlab-standby-00b684cbe515b64895a1ddf6ab", "autoscaling_group:gitsync-00c013eeb2758ae5ef30316a89", "autoscaling_group:jumpbox-00c013eeb2758ae5ef30316a86", "autoscaling_group:mcnulty-events"];
+
+  targetlist_array = [];
+
+  targetlist_array.push(target);
+
+  flow = window.__framerNew("flow", "10:7-10:23", "#115a7bddf",new FlowComponent);
+
+  flow.showNext(MAIN);
+
+  ref = [toggle1];
+  for (i = 0, len = ref.length; i < len; i++) {
+    toggle = ref[i];
+    toggle.states.off = {
+      backgroundColor: "rgba(255, 255, 255, 0.5)"
+    };
+  }
+
+  ref1 = [knob1];
+  for (j = 0, len1 = ref1.length; j < len1; j++) {
+    knob = ref1[j];
+    knob.states.off = {
+      x: 294,
+      shadowSpread: 1,
+      shadowColor: "rgba(0,0,0,0.2)"
+    };
+  }
+
+  row_groupby.states.off = {
+    y: 490,
+    opacity: 0
+  };
+
+  btn_conditions.states.off = {
+    y: 592
+  };
+
+  knob1.stateSwitch("off");
+
+  toggle.stateSwitch("off");
+
+  row_groupby.stateSwitch("off");
+
+  btn_conditions.stateSwitch("off");
+
+  row_group.onTap(function() {
+    knob1.stateCycle({
+      time: 0.3
+    });
+    toggle1.stateCycle({
+      time: 0.3
+    });
+    row_groupby.stateCycle({
+      time: 0.3
+    });
+    return btn_conditions.stateCycle({
+      time: 0.3
+    });
+  });
+
+  metricScroll = window.__framerNew("metricScroll", "38:19-43:23", "#1615a10b2",new ScrollComponent({
+    x: 0,
+    y: 127,
+    width: 375,
+    height: 540,
+    scrollHorizontal: false
+  }));
+
+  metricScroll.parent = METRICS;
+
+  metric_checkbox.parent = metricScroll.content;
+
+  metric_checkbox.y = 25;
+
+  metric.parent = metricScroll.content;
+
+  metric.y = 0;
+
+  yval = 80;
+
+  for (k = 0, len2 = metric_array.length; k < len2; k++) {
+    m = metric_array[k];
+    li = window.__framerNew("li", "52:6-52:18", "@Layer",metric.copy());
+    metriclist_array.push(li);
+    li.parent = metricScroll.content;
+    li.y = yval;
+    if (m.length < 35) {
+      li.children[0].text = m;
+    } else {
+      li.children[0].text = m.substring(0, 35) + "...";
+    }
+    yval += 80;
+  }
+
+  targetScroll = window.__framerNew("targetScroll", "63:19-68:23", "#116c17d5a",new ScrollComponent({
+    x: 0,
+    y: 127,
+    width: 375,
+    height: 540,
+    scrollHorizontal: false
+  }));
+
+  targetScroll.parent = TARGETS;
+
+  target_checkbox.parent = targetScroll.content;
+
+  target_checkbox.y = 25;
+
+  target.parent = targetScroll.content;
+
+  target.y = 0;
+
+  yval = 80;
+
+  for (l = 0, len3 = target_array.length; l < len3; l++) {
+    t = target_array[l];
+    li = window.__framerNew("li", "77:6-77:18", "@Layer",target.copy());
+    targetlist_array.push(li);
+    li.parent = targetScroll.content;
+    li.y = yval;
+    if (t.length < 35) {
+      li.children[0].text = t;
+    } else {
+      li.children[0].text = t.substring(0, 35) + "...";
+    }
+    yval += 80;
+  }
+
+  linegraph = window.__framerNew("linegraph", "88:16-93:23", "#c69400e3",new Layer({
+    parent: MAIN,
+    x: Align.center,
+    y: 170,
+    width: 335,
+    backgroundColor: "null"
+  }));
+
+  linegraph.html = "<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 335 100\" style=\"enable-background:new 0 0 335 100;\" xml:space=\"preserve\"><path stroke-linejoin=\"round\" fill=\"none\" stroke=\"#3399cc\" stroke-width=\"4\" d=\"M0,91.6c3.6-1.1,7.2,0.4,10.8,0.5c3.9,0.1,7.4-0.2,11.1-1.1c3.9-1,7.3-0.5,11.2-0.3c3.9,0.2,7.3,1.3,11.1-0.2c2.1-0.8,3.6-2.5,5.6-3.4c0.8-0.4,2-1.2,2.8-1.3c1.5-0.2,1.6,0.5,2.8,1.4C59,90,62,91.7,66.6,91c3.9-0.6,7.6,0.1,11.5-0.3c3.7-0.4,7.4,0.3,11.2-0.1c3.8-0.4,7.7-0.2,11.5-0.4c3.7-0.2,7.4-0.8,11.2-1.1c3.9-0.3,7.3-0.7,11.1,0.4c3.9,1.1,7.3,3.5,11.2,4.4c4.5,1.1,6.9-2,11.1-2.5c4.1-0.5,6.9,3,11.2,1.7c0.8-0.2,2.2-0.5,2.8-1c1-0.9,1-2.3,1.2-3.9c1.1-6.4,2.3-12.9,3.2-19.3c1.4-9.4,1.7-19,2.4-28.5c0.8-9.8,1.4-19.5,2.9-29.2c0.3-2.1,0.4-4.8,1.3-6.7c1.2-2.7,1.7,0.6,2.1,2.4c1,4.5,1.6,9.2,2,13.8c0.9,9.5,2.2,19.4,4.4,28.6c0.4,1.5,0.8,5,2,6c0.9,0.8,1.6,0.3,2.8,0.2c1.8-0.2,3.9-0.2,5.6,0.4c1.9,0.7,7.6,7.9,9.6,9.9c1.4,1.4,3.3,2.3,5,3.2c3.4,1.7,6.6,4.3,10.4,5c-0.5,0.4,4.2,3,5.6,3.2c2.1,0.3,4.3-0.7,6.1-0.2c2.2,0.6,4.1,3.4,6.1,4.2c2.5,1.1,4-0.2,6.4-0.5c2.6-0.4,4.1,0.6,6.3,1.6c2,0.9,4.2,0.7,6.3,0.5c4.1-0.5,8.7,0.9,12.7,1.7c3.8,0.8,10.6,4.2,14.3,1.9c-0.4,0-0.8-0.3-1.2-0.3c2-0.9,3.6-3.4,5.6-4c1.6-0.5,4.2,1,5.5,1.9c2,1.4,3,2.5,5.5,2.7c2,0.2,4-0.4,6-0.5c3.7-0.3,7.3,0.4,11,0.4c2.4,0,3.6,0.1,5.6,1.4c1.9,1.2,4,2.9,6.3,2.9c2,0,4.2-1.1,6.2-1.4c2.2-0.4,4.2,0.2,6.3,0.9\"/></svg>";
+
+  linegraph2 = window.__framerNew("linegraph2", "96:13-96:28", "@Layer",linegraph.copy());
+
+  linegraph2.parent = THRESHOLDS;
+
+  linegraph2.x = Align.center;
+
+  linegraph2.y = 170;
+
+  linegraph2.width = 335;
+
+  linegraph2.backgroundColor = "null";
+
+  drg_warn.z = 2;
+
+  drg_alert.z = 2;
+
+  drg_warn.draggable.enabled = true;
+
+  drg_warn.draggable.horizontal = false;
+
+  drg_warn.draggable.overdrag = false;
+
+  drg_warn.draggable.pixelAlign = true;
+
+  drg_warn.draggable.momentum = false;
+
+  drg_warn.draggable.constraints = {
+    y: 70,
+    height: 170
+  };
+
+  drg_alert.draggable.enabled = true;
+
+  drg_alert.draggable.horizontal = false;
+
+  drg_alert.draggable.overdrag = false;
+
+  drg_alert.draggable.pixelAlign = true;
+
+  drg_alert.draggable.momentum = false;
+
+  drg_alert.draggable.constraints = {
+    y: 70,
+    height: 170
+  };
+
+  drg_warn.on(Events.DragMove, function() {
+    return txt_warn.text = (-10 * (drg_warn.y - 70) / 144 + 10).toFixed(1);
+  });
+
+  drg_alert.on(Events.DragMove, function() {
+    return txt_alert.text = (-10 * (drg_alert.y - 70) / 144 + 10).toFixed(1);
+  });
+
+  row_metric.onTap(function() {
+    return flow.showNext(METRICS);
+  });
+
+  row_target.onTap(function() {
+    return flow.showNext(TARGETS);
+  });
+
+  for (n = 0, len4 = metriclist_array.length; n < len4; n++) {
+    m = metriclist_array[n];
+    m.onTap(function() {
+      metric_checkbox.parent = this;
+      if (this.children[0].text.length < 26) {
+        row_metric_label.text = this.children[0].text;
+      } else {
+        row_metric_label.text = this.children[0].text.substring(0, 26) + "...";
+      }
+      return flow.showPrevious();
+    });
+  }
+
+  metric_arrow.onTap(function() {
+    return flow.showPrevious();
+  });
+
+  for (o = 0, len5 = targetlist_array.length; o < len5; o++) {
+    t = targetlist_array[o];
+    t.onTap(function() {
+      target_checkbox.parent = this;
+      if (this.children[0].text.length < 26) {
+        row_target_label.text = this.children[0].text;
+      } else {
+        row_target_label.text = this.children[0].text.substring(0, 26) + "...";
+      }
+      return flow.showPrevious();
+    });
+  }
+
+  target_arrow.onTap(function() {
+    return flow.showPrevious();
+  });
+
+  btn_conditions.onTap(function() {
+    return flow.showNext(THRESHOLDS);
+  });
+
+  btn_notifications.onTap(function() {
+    return flow.showNext(MAIN);
+  });
+
+}).call(this);
+})</script>
+
+	</head>
+	<body>
+	</body>
+</html>

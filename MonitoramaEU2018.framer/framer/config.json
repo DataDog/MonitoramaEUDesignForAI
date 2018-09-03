@@ -1,0 +1,32 @@
+{
+  "orientation" : 0,
+  "updateDelay" : 0.29999999999999999,
+  "designModeSelected" : 1,
+  "cachedDeviceHeight" : 667,
+  "contentScale" : 1,
+  "fullScreen" : false,
+  "cachedDeviceWidth" : 375,
+  "deviceType" : "apple-iphone-8-silver",
+  "sharedPrototype" : true,
+  "propertyPanelToggleStates" : {
+
+  },
+  "projectId" : "71B2B1E9-85B6-4508-BB49-068E56078249",
+  "deviceOrientation" : 0,
+  "selectedHand" : "",
+  "showBezel" : true,
+  "foldedCodeRanges" : [
+    "{0, 1490}",
+    "{1491, 1642}",
+    "{3134, 626}",
+    "{3761, 556}",
+    "{4318, 517}",
+    "{4837, 516}",
+    "{5354, 1752}",
+    "{7107, 1710}",
+    "{8818, 1098}",
+    "{9917, 908}",
+    "{10826, 2404}"
+  ],
+  "deviceScale" : "fit"
+}
