@@ -1,5 +1,5 @@
 # Rethinking UX for AI-driven Monitoring Tools
-## Monitorama EU 2018
+### Monitorama EU 2018
 
 A web version of these protoypes is available at: [https://framer.cloud/MwIae](https://framer.cloud/MwIae)
 
